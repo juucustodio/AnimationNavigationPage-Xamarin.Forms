@@ -17,5 +17,30 @@ namespace DemoNavigation
         {
             InitializeComponent();
         }
+
+        private async void GoSlidePageFromLeft(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SlidePage());
+        }
+
+        private async void GoFadePageFromLeft(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FadePage());
+        }
+
+        private async void GoRollPageFromLeft(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RollPage());
+        }
+
+        private async void GoRotatePageFromLeft(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RotatePage());
+        }
+
+        private async void GoPushPageFromLeft(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PushPage());
+        }    
     }
 }

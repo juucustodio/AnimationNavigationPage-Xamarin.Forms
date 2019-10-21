@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" x:Class="DemoNavigation.MainPage">
-    <StackLayout>
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+             mc:Ignorable="d" x:Class="DemoNavigation.MainPage"
+             Title="MainPage">
+    <StackLayout Margin="50">
+        <Button Text="Slide Page" Clicked="GoSlidePageFromLeft"/>
+        <Button Text="Fade Page" Clicked="GoFadePageFromLeft"/>
+        <Button Text="Roll Page" Clicked="GoRollPageFromLeft"/>
+        <Button Text="Rotate Page" Clicked="GoRotatePageFromLeft"/>
+        <Button Text="Push Page" Clicked="GoPushPageFromLeft"/>
     </StackLayout>
 </ContentPage>
